@@ -4,10 +4,10 @@ import random
 class Hitbox:
     masks = []
     def __init__(self, left, right, up, down):
-        self.masks.append(pygame.mask.from_surface(up))
-        self.masks.append(pygame.mask.from_surface(down))
         self.masks.append(pygame.mask.from_surface(left))
         self.masks.append(pygame.mask.from_surface(right))
+        self.masks.append(pygame.mask.from_surface(up))
+        self.masks.append(pygame.mask.from_surface(down))
         
         # debug
         
